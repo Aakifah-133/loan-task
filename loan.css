@@ -72,7 +72,7 @@ ul, li {
  
   
 /* ------ Media Query ------ */
-@media (max-width: 2561px) {
+@media (max-width: 768px) {
     html,body {
       width: 100%;
       margin: 0;
@@ -83,53 +83,53 @@ ul, li {
 section {
     background-image: url(images/loan.png);
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-size: cover;
     background-position: center;
 }
 /* ------ Media Query ------ */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     section {
         width: 100%;
-        height: 430px;
-    }
-}
-@media (max-width: 992px) {
-    section {
-        width: 100%;
-        height: 350px;
+        height: 100%;
     }
 }
 @media (max-width: 768px) {
     section {
         width: 100%;
-        height: 250px;
+        height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    section {
+        width: 100%;
+        height: 100%;
     }
 }
 .overlay {
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px;
+    height: 100%;
     background: #06031a9a;
 }
 /* ------ Media Query ------ */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .overlay {
         width: 100%;
-        height: 430px;
-    }
-}
-@media (max-width: 992px) {
-    .overlay {
-        width: 100%;
-        height: 350px;
+        height: 100%;
     }
 }
 @media (max-width: 768px) {
     .overlay {
         width: 100%;
-        height: 250px;
+        height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .overlay {
+        width: 100%;
+        height: 100%;
     }
 }
 nav {
@@ -158,12 +158,12 @@ nav ul {
     margin-right: 450px;
 }
 /* ------ Media Query ------ */
-@media (min-width: 2000px) and (max-width: 2561px) {
+@media (min-width: 768px) and (max-width: 2561px) {
     nav ul {
        margin-right: 1100px;
     }
 }
-@media (min-width: 992px) and (max-width: 1085px) {
+@media (min-width: 768px) and (max-width: 1085px) {
     nav li {
         margin-right: -14px;
     }
@@ -191,7 +191,7 @@ nav ul li a:hover {
     display: none
 }
 #check {
-    display: none;
+    display: center;
 }
 #check:checked ~ ul {
     left: 0;
