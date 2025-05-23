@@ -2,7 +2,74 @@
     margin: 0;
     padding: 0;
 }
+/* Reset default list styles */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  nav {
+    background-color:transparent;
+    width: 220px;
+  }
+  
+  .menu > li {
+    position: relative;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu li:hover {
+    background-color: transparent;
+  }
+  
+  /* Submenu styles */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    width: 15;
 
+    background-color: #fff; /* White background for clarity */
+    border-radius: 5px; /* Smooth edges */
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .has-submenu {
+    position: relative; /* Required for the submenu to position itself correctly */
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+  .has-submenu:hover .submenu {
+    display: block;
+}
+  
+  .submenu li a {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+    display: inline;
+
+}
+  
 /* ------ Media Query ------ */
 @media (max-width: 2561px) {
     html,body {
@@ -247,7 +314,6 @@ ul li:hover .sub-menu-page {
     font-weight: 400;
     line-height: 74px;
     padding-top: 200px;
-    padding-left: 130px;
 }
 /* ------ Media Query ------ */
 @media (min-width: 2000px) and (max-width: 2561px) {
@@ -383,7 +449,7 @@ ul li:hover .sub-menu-page {
     margin-bottom: 15px;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
-    color: #001D38;
+    color: #254a6c;
 }
 /* ------ Media Query ------ */
 @media(min-width: 400px) and (max-width: 412px) {
@@ -399,7 +465,7 @@ ul li:hover .sub-menu-page {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    color: #7A838B;
+    color: #507392;
 }
 /* ------ Media Query ------ */
 @media(min-width: 400px) and (max-width: 412px) {
@@ -420,7 +486,7 @@ ul li:hover .sub-menu-page {
 /* Blog Info */
 .blog-info a {
     text-decoration: none;
-    color: #666666 !important;
+    color: #3f748c !important;
     font-size: 14px;
     margin-left: 100px;
 }
@@ -480,11 +546,12 @@ ul li:hover .sub-menu-page {
 .blog-post {
     width: 350px;
     height: 500px;
-    background: #fbf9ff;
+    background: #816da8;
     padding: 30px;
     float: right;
     margin-right: 120px;
     margin-top: -3000px;
+    
 }
 /* ------ Media Query ------ */
 @media (max-width: 1025px) {
@@ -518,13 +585,13 @@ ul li:hover .sub-menu-page {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    color: #7A838B;
+    color: #ffffff;
 }
  /* Recent Post */
 .recent-post {
     width: 350px;
     height: 500px;
-    background: #fbf9ff;
+    background: #7d66ab;
     padding: 30px;
     float: right;
     margin-right: 120px;
@@ -567,7 +634,7 @@ ul li:hover .sub-menu-page {
 }
 .first-post p {
     font-size: 14px;
-    color: #7A838B;
+    color: #5384af;
     font-family: "Roboto", sans-serif;
 }
 
@@ -575,7 +642,7 @@ ul li:hover .sub-menu-page {
 .instagram-feed {
     width: 350px;
     height: 400px;
-    background: #fbf9ff;
+    background: #7c57c6;
     padding: 30px;
     float: right;
     margin-right: 120px;

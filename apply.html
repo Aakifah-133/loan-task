@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>apply</title>
+  <title>APPLY</title>
   <link href="apply.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -20,21 +20,29 @@
 <body>
   <section>
     <label class="overlay">
-  <nav>
-    <input type="checkbox" id="check" name="" value="">
-    <label for="check" id="checkbtn"><i class="fas fa-bars"></i></label>
-    <label class="logo">
-      <img src="images/logo.webp" alt="logo-img">
-    </label>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="loan.html">Loan</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="apply.html">Pages</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="FAQ.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+      <nav>
+        <input type="checkbox" id="check" name="" value="">
+        <label for="check" id="checkbtn"><i class="fas fa-bars"></i></label>
+        <label class="logo">
+          <img src="images/logo.webp" alt="logo-img">
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="loan.html">Loan</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-submenu">
+            <a href="#">Pages ▾</a>
+            <ul class="submenu">
+              <li><a href="elements.html">Elements</a></li>
+              <li><a href="apply.html">Apply</a></li>
+
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
   <!-- Phone Icon -->
   <label class="phone-icon">
@@ -47,20 +55,22 @@
   </label>
   </nav>
 <!-- Text Part -->
+ <div class="text-center">
   <label class="text">
     <h3>Apply Now</h3>
 </label>
-
+</div>
 </label>
 </section>
 
                                         <!-- Form Part -->
-<div class="form">
+<div class="container form">
     <!-- Text Part -->
     <div class="text">
         <h4>How much do you want?</h4>
         <p>We provide online instant cash loans with quick approval that suit your term length</p>
     </div>
+    <div class="container text-center">
     <!-- Form Name Part -->
     <div class="name">
         <input type="text" id="name" value="Your name">
@@ -94,13 +104,13 @@
     </div>
     <p class="pay">You have to pay: $0</p>
     <!-- Form Button Part -->
-    <div class="form-button">
+    <div class=" form-button text-center m-auto">
         <a href="#" target="_blank">Apply Now</a>
     </div>
   </div>
-
+  </div>
                          <!-- Work Area Section -->
-<div class="work-area">
+<div class="work-area text-center">
     <!-- Text Part -->
     <div class="text">
       <h2>How it Works</h2>
@@ -133,7 +143,7 @@
   </div>
 
                             <!-- Footer Section -->
- <div class="footer-section">
+ <div class="container footer-section">
     <!-- Colums Section -->
     <div class="footer-colums">
          <!-- First Colums -->

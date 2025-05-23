@@ -2,7 +2,75 @@
     margin: 0;
     padding: 0;
 }
+/* Reset default list styles */
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  nav {
+    background-color: transparent;
+    width: 220px;
+  }
+  
+  .menu > li {
+    position: relative;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu li:hover {
+    background-color:transparent;
+  }
+  
+  /* Submenu styles */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    width: 100;
 
+    background-color: #fff; /* White background for clarity */
+    border-radius: 5px; /* Smooth edges */
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .has-submenu {
+    position: relative; /* Required for the submenu to position itself correctly */
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+  .has-submenu:hover .submenu {
+    display: block;
+}
+  
+  .submenu li a {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+    display: inline;
+
+}
+ 
+  
 /* ------ Media Query ------ */
 @media (max-width: 2561px) {
     html,body {
@@ -74,7 +142,7 @@ nav ul li a {
     padding: 8px 12px;
 }
 nav ul li a:hover {
-    color: aqua;
+    color: rgb(74, 255, 255);
 }
 #checkbtn {
     float: right;
@@ -188,7 +256,7 @@ ul li:hover .sub-menu-page {
     }
 }
 .nav-button a {
-    color: #33D4D6;
+    color: #22e4e7;
     text-decoration: none;
     font-size: 12px;
     border: 2px solid #33D4D6;
@@ -320,7 +388,7 @@ ul li:hover .sub-menu-page {
     margin-left: 55px;
     margin-top: 20px;
     border-radius: 5px;
-    color: #7A838B;
+    color: #131414;
 }
 /* ------ Media Query ------ */
 @media (max-width: 768px) {
@@ -341,7 +409,7 @@ ul li:hover .sub-menu-page {
     margin-left: 55px;
     margin-top: 20px;
     border-radius: 5px;
-    color: #7A838B;
+    color: #141516;
 }
 /* ------ Media Query ------ */
 @media (max-width: 768px) {
@@ -359,7 +427,7 @@ ul li:hover .sub-menu-page {
 .form .pay {
     font-size: 16px;
     font-weight: 400;
-    color: #7A838B;
+    color: #0e0f10;
     line-height: 3; 
     padding-left: 55px;
     padding-top: 25px;
@@ -376,9 +444,9 @@ ul li:hover .sub-menu-page {
     margin-top: 30px;
     width: 335px;
     height: 50px;
-    border: 2px solid #33D4D6;
+    border: 2px solid #487b7b;
     border-radius: 5px;
-    background-color: #33D4D6;
+    background-color: #488485;
     text-align: center;
     padding-top: 10px;
 }
@@ -437,11 +505,11 @@ ul li:hover .sub-menu-page {
     }
 }
 .text-button a {
-    background-color: #33D4D6;
+    background-color: #4c7575;
     color: #fff;
     text-decoration: none;
     font-size: 22px;
-    border: 2px solid #33D4D6;
+    border: 2px solid #4d8384;
     width: 12px;
     padding: 12px;
     margin: 12px;
@@ -449,7 +517,7 @@ ul li:hover .sub-menu-page {
 }
 .text-button :hover {
     background-color: #06031a9a;
-    color: #33D4D6;
+    color: #4e9a9b;
 }
 
 
@@ -550,7 +618,7 @@ ul li:hover .sub-menu-page {
     border-radius: 5px;
     width: 350px;
     height: 550px;
-    background: linear-gradient(to bottom, #0a8cff 0%, #054680 100%);;
+    background: linear-gradient(to bottom, #022543 0%, #001e39 100%);;
 }
 @media (min-width: 993px) and (max-width: 1026px) {
     .offer-section .album .first-album {
@@ -592,13 +660,11 @@ ul li:hover .sub-menu-page {
     margin-bottom: 15px;
 }
 .offer-section .info-text h3 {
-    color: #33D4D6;
+    color: #25e0e0;
     font-weight: 400;
     font-size: 30px;
 }
 /* Service Content */
-.service-content ul {
-}
 .service-content ul li {
     font-size: 16px;
     line-height: 32px;
@@ -635,22 +701,21 @@ ul li:hover .sub-menu-page {
     }
 }
 .service-content .apply-button a {
-    background-color: #33D4D6;
+    background-color: #2a868d;
     color: #fff;
     text-decoration: none;
     font-size: 22px;
-    border: 2px solid #33D4D6;
+    border: 2px solid #2a8189;
     width: 15px;
     padding: 15px;
     margin: 15px;
     border-radius: 5px;
 }
 .service-content .apply-button :hover {
-    background: #054680;
-    color: #33D4D6;
+    background: #637a90;
+    color: #121313;
 }
-
-                                  /* Why Choose Us Section */
+ /* Why Choose Us Section */
 .choose-section {
     width: 100%;
     height: 800px;
@@ -744,7 +809,7 @@ ul li:hover .sub-menu-page {
     font-size: 40px;
     line-height: 42px;
     font-weight: 400;
-    color: #001D38;
+    color: #255179;
     position: relative;
     margin-bottom: 35px;
 }
@@ -809,25 +874,22 @@ li::marker {
     color: #33D4D6;
 }
 /* Button Part */
-.choose-section .about-button {
-
-}
 .choose-section .about-button a {
-    background-color: #33D4D6;
+    background-color: #41797a;
     color: #fff;
     text-decoration: none;
     font-size: 22px;
     font-weight: 500;
     text-align: center;
-    border: 1px solid #33D4D6;
+    border: 1px solid #3d6f70;
     width: 12px;
     padding: 11px 29px 13px 29px;
     border-radius: 5px;
     transition: 0.3s;
 }
 .choose-section .about-button :hover {
-    background: #fff;
-    color: #33D4D6;
+    background: #d4d0d0;
+    color: #0e1111;
 }
 
                                   /* Work Area Section */
@@ -837,7 +899,7 @@ li::marker {
     background: #F5FBFF;
 }
 /* ------ Media Query ------ */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .work-area {
         width: 100%;
         height: 900px;
@@ -849,7 +911,7 @@ li::marker {
         height: 1000px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .work-area {
         width: 100%;
         height: 1250px;
@@ -863,7 +925,7 @@ li::marker {
 }
 /* Text Part */
 .work-area .text {
-    text-align:center;
+    text-align: center;
     padding-top: 150px;
 }
 .work-area .text h2 {
@@ -885,7 +947,7 @@ li::marker {
     border: 2px solid #fff;
     border-radius: 50%;
     padding: 30px 30px 30px 30px;
-    color: #0A8CFF;
+    color: #113fd7;
     font-size: 16px;
     font-weight: 500;
     background: #DDF0FF;
@@ -1185,11 +1247,7 @@ svg {
     width: 100%;
     height: 400px;
 }
-@media (max-width: 768px) {
-    .img-slider {
-    
-    }
-}
+
 .img-slider img {
     margin-right: 70px;
     float: left;
@@ -1404,7 +1462,7 @@ svg {
     }
 }
 .apply-loan-button a {
-    background-color: #33D4D6;
+    background-color: #396263;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
@@ -1417,8 +1475,8 @@ svg {
     transition: 0.3s;
 }
 .apply-loan-button :hover {
-    background: #06031a9a;
-    color: #33D4D6;
+    background: #bfbdcd9a;
+    color: #090909;
 }
 
 
