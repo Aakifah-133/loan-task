@@ -368,6 +368,7 @@ ul li:hover .sub-menu-page {
     .choose-section  {
         width: 100%;
         height: 1200px;
+        
     }
 }
 @media (max-width: 750px) {
@@ -524,9 +525,7 @@ li::marker {
     color: #33D4D6;
 }
 /* Button Part */
-.choose-section .about-button {
 
-}
 .choose-section .about-button a {
     background-color: #33D4D6;
     color: #fff;
@@ -545,8 +544,33 @@ li::marker {
     color: #33D4D6;
 }
 
+@media (max-width: 600px) {
+  .choose-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .choose-section img {
+    float: none;
+    margin: 20px auto 20px auto;
+    display: block;
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+  }
+  .choose-section .info {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
                                /* Work Area Section */
- .work-area {
+.work-area {
     width: 100%;
     height: 700px;
     background: #F5FBFF;
@@ -562,13 +586,21 @@ li::marker {
     .work-area {
         width: 100%;
         height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width: 576px) {
     .work-area {
         width: 100%;
-        height: 1300px;
-        
+        height: 1250px;
+    }
+}
+@media (max-width: 376px) {
+    .work-area {
+        width: 100%;
+        height: 1350px;
     }
 }
 /* Text Part */
@@ -595,7 +627,7 @@ li::marker {
     border: 2px solid #fff;
     border-radius: 50%;
     padding: 30px 30px 30px 30px;
-    color: #0A8CFF;
+    color: #113fd7;
     font-size: 16px;
     font-weight: 500;
     background: #DDF0FF;
@@ -661,6 +693,7 @@ li::marker {
         font-size: 3.8vw;
     }
 }
+
 
                               /* Frequently Ask Section */
 .feq-ask {
@@ -894,11 +927,7 @@ svg {
     width: 100%;
     height: 400px;
 }
-@media (max-width: 768px) {
-    .img-slider {
-    
-    }
-}
+
 .img-slider img {
     margin-right: 70px;
     float: left;
@@ -1324,4 +1353,29 @@ svg {
     font-size: 13px;
     padding-left: 100px;
     line-height: 3;
+}
+
+@media (max-width: 576px) {
+  .footer-section .first-text,
+  .footer-section .second-text,
+  .footer-section .third-text,
+  .footer-section .fourth-text {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  .footer-section .first-text img,
+  .footer-section .first-text p,
+  .footer-section .second-text h3,
+  .footer-section .third-text h3,
+  .footer-section .fourth-text h3,
+  .footer-section .second-text .list-link,
+  .footer-section .third-text .list-link-third,
+  .footer-section .fourth-text p {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    text-align: center;
+    display: block;
+  }
 }

@@ -887,3 +887,27 @@ ul li:hover .sub-menu-page {
     padding-left: 100px;
     line-height: 3;
 }
+@media (max-width: 576px) {
+  .footer-section .first-text,
+  .footer-section .second-text,
+  .footer-section .third-text,
+  .footer-section .fourth-text {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  .footer-section .first-text img,
+  .footer-section .first-text p,
+  .footer-section .second-text h3,
+  .footer-section .third-text h3,
+  .footer-section .fourth-text h3,
+  .footer-section .second-text .list-link,
+  .footer-section .third-text .list-link-third,
+  .footer-section .fourth-text p {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    text-align: center;
+    display: block;
+  }
+}

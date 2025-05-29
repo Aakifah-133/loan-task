@@ -360,8 +360,8 @@ ul li:hover .sub-menu-page {
     }
 }
 
-                                       /* Offer Section */
-  .offer-section {
+                                  /* Offer Section */
+.offer-section {
     width: 100%;
     height: 800px;
 }
@@ -427,10 +427,14 @@ ul li:hover .sub-menu-page {
 }
 @media (max-width: 768px) {
     .offer-section .album {
-        padding-left: 25px;
-        margin-left: 5px;
-        margin-right: -30px;
-    }
+    margin: 0 auto 30px auto !important;
+    padding-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
 }
 @media (max-width: 750px) {
     .offer-section .album {
@@ -457,11 +461,17 @@ ul li:hover .sub-menu-page {
     border-radius: 5px;
     width: 350px;
     height: 550px;
-    background: linear-gradient(to bottom, #021e36 0%, #02192c 100%);;
+    background: linear-gradient(to bottom, #022543 0%, #001e39 100%);;
 }
 @media (min-width: 993px) and (max-width: 1026px) {
     .offer-section .album .first-album {
         width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offer-section .album .first-album {
+        margin: 0 auto important;
     }
 }
 @media (max-width: 321px) {
@@ -480,6 +490,7 @@ ul li:hover .sub-menu-page {
         margin-left: 120px;
     }
 }
+
 @media (max-width: 321px) {
     .offer-section .first-img img {
         margin-left: 115px;
@@ -498,7 +509,7 @@ ul li:hover .sub-menu-page {
     margin-bottom: 15px;
 }
 .offer-section .info-text h3 {
-    color: #33D4D6;
+    color: #25e0e0;
     font-weight: 400;
     font-size: 30px;
 }
@@ -539,19 +550,19 @@ ul li:hover .sub-menu-page {
     }
 }
 .service-content .apply-button a {
-    background-color: #33D4D6;
+    background-color: #2a868d;
     color: #fff;
     text-decoration: none;
     font-size: 22px;
-    border: 2px solid #33D4D6;
+    border: 2px solid #2a8189;
     width: 15px;
     padding: 15px;
     margin: 15px;
     border-radius: 5px;
 }
 .service-content .apply-button :hover {
-    background: #7b92a5;
-    color: #0c0d0d;
+    background: #637a90;
+    color: #121313;
 }
 
                              /* Work Area Section */
@@ -571,19 +582,21 @@ ul li:hover .sub-menu-page {
     .work-area {
         width: 100%;
         height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width: 576px) {
     .work-area {
         width: 100%;
-        height: 1700px;
-        
+        height: 1250px;
     }
 }
 @media (max-width: 376px) {
     .work-area {
         width: 100%;
-        height: 1850px;
+        height: 1350px;
     }
 }
 /* Text Part */
@@ -595,7 +608,7 @@ ul li:hover .sub-menu-page {
     font-size: 40px;
     line-height: 42px;
     font-weight: 400;
-    color: #4e140d;
+    color: #001D38;
     margin-bottom: 15px;
 }
 .work-area .text p {
@@ -610,7 +623,7 @@ ul li:hover .sub-menu-page {
     border: 2px solid #fff;
     border-radius: 50%;
     padding: 30px 30px 30px 30px;
-    color: #0A8CFF;
+    color: #113fd7;
     font-size: 16px;
     font-weight: 500;
     background: #DDF0FF;
@@ -676,11 +689,11 @@ ul li:hover .sub-menu-page {
         font-size: 3.8vw;
     }
 }
-
                          /* Apply Loan Section */
  .apply-loan {
     background-image: url(images/loan.png.webp);
     height: 380px;
+    margin-top: 50%;
 }
 /* ------ Media Query ------ */
 @media (min-width: 2000px) and (max-width: 2561px) {
@@ -970,4 +983,32 @@ ul li:hover .sub-menu-page {
     font-size: 13px;
     padding-left: 100px;
     line-height: 3;
+}
+
+@media (max-width: 576px) {
+
+
+    
+  .footer-section .first-text,
+  .footer-section .second-text,
+  .footer-section .third-text,
+  .footer-section .fourth-text {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  .footer-section .first-text img,
+  .footer-section .first-text p,
+  .footer-section .second-text h3,
+  .footer-section .third-text h3,
+  .footer-section .fourth-text h3,
+  .footer-section .second-text .list-link,
+  .footer-section .third-text .list-link-third,
+  .footer-section .fourth-text p {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    text-align: center;
+    display: block;
+  }
 }
